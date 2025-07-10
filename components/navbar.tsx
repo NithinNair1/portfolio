@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, Github, Linkedin, Twitter, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -57,7 +58,7 @@ export default function Navbar() {
             className="flex items-center gap-2 text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-600 dark:from-indigo-400 dark:to-blue-500"
           >
             <Image
-              src="/title_icon_portfolio.png" // or /favicon.ico if ICO
+              src={`${basePath}/title_icon_portfolio.png`} // or /favicon.ico if ICO
               alt="Logo"
               width={24}
               height={24}

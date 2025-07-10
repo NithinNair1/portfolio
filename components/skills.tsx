@@ -17,6 +17,7 @@ import {
   Cloud,
   Settings
 } from "lucide-react";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Skills() {
   const skillCategories = [

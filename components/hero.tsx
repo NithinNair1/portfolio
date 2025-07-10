@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Hero() {
   return (
@@ -40,8 +41,8 @@ export default function Hero() {
               </Button>
               <Button variant="outline" asChild>
                 <a
-                  href="/resume_nithin_genai_developer.pdf"
-                  download="/resume_nithin_genai_developer.pdf"
+                  href={`${basePath}/resume_nithin_genai_developer.pdf`}
+                  download={`${basePath}/resume_nithin_genai_developer.pdf`}
                 >
                   Download CV <Download className="ml-2 h-4 w-4" />
                 </a>
@@ -61,7 +62,7 @@ export default function Hero() {
               {/* 2) This inner div is what we actually zoom & shift */}
               <div className="relative w-full h-full transform scale-[1.1] origin-top -translate-y-2">
                 <Image
-                  src="/image_portfolio.png"
+                  src={`${basePath}/image_portfolio.png`}
                   alt="Nithin Nair"
                   fill // still use fill so image covers this inner div
                   className="object-cover object-top transform scale-90"

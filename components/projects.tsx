@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Projects() {
   const projects = [
@@ -26,7 +27,7 @@ export default function Projects() {
         "An AI-powered application that generates content based on user prompts using OpenAI's GPT models.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "Node.js", "OpenAI API", "Express", "PostgreSQL"],
-      github: "https://github.com",
+      // github: "https://github.com",
       demo: "https://demo.com"
     },
     {
@@ -36,7 +37,7 @@ export default function Projects() {
         "A real-time messaging platform with features like user authentication, message encryption, and file sharing.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "Firebase", "WebSockets", "Tailwind CSS", "Redux"],
-      github: "https://github.com",
+      // github: "https://github.com",
       demo: "https://demo.com"
     },
     {
@@ -46,7 +47,7 @@ export default function Projects() {
         "A comprehensive task management system with Kanban boards, task assignments, and progress tracking.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Vue.js", "Express", "MongoDB", "Docker", "JWT"],
-      github: "https://github.com",
+      // github: "https://github.com",
       demo: "https://demo.com"
     },
     {
@@ -56,7 +57,7 @@ export default function Projects() {
         "A mobile application for tracking workouts, nutrition, and health metrics with data visualization.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React Native", "GraphQL", "Node.js", "MongoDB", "D3.js"],
-      github: "https://github.com",
+      // github: "https://github.com",
       demo: "https://demo.com"
     },
     {
@@ -66,7 +67,7 @@ export default function Projects() {
         "A weather application that provides real-time forecasts, alerts, and historical weather data.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "Redux", "Weather API", "Chart.js", "Geolocation"],
-      github: "https://github.com",
+      // github: "https://github.com",
       demo: "https://demo.com"
     }
   ];
@@ -102,7 +103,11 @@ export default function Projects() {
             <Card className="h-full overflow-hidden bg-background/50 backdrop-blur-sm border-border/50 hover:border-indigo-500/50 transition-all duration-300">
               <div className="relative aspect-video overflow-hidden">
                 <Image
-                  src={project.image || "/placeholder.svg"}
+                  src={`${
+                    project.image
+                      ? basePath + project.image
+                      : basePath + "/placeholder.svg"
+                  }`}
                   alt={project.title}
                   fill
                   className={`object-cover transition-transform duration-500 ${
