@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // ← only import once, up here
 import { ThemeProvider } from "@/components/theme-provider";
-const config = require("../next.config.mjs");
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Nithin Nair | Portfolio",
   description: "Personal portfolio website of Nithin Nair, AI Engineer",
   icons: {
-    icon: "${config.basePath}/title_icon_portfolio.png" // or "/icon.png"
+    icon: `${basePath}/title_icon_portfolio.png` // or "/icon.png"
   }
 };
 
