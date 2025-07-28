@@ -62,7 +62,7 @@ export default function Hero() {
               {/* 2) This inner div is what we actually zoom & shift */}
               <div className="relative w-full h-full transform scale-[1.1] origin-top -translate-y-2">
                 <Image
-                  src={`${basePath}/image_portfolio.png`}
+                  src={`${basePath}/image_portfolio.jpeg`}
                   alt="Nithin Nair"
                   fill // still use fill so image covers this inner div
                   className="object-cover object-top transform scale-90"
