@@ -60,7 +60,7 @@ export default function Hero() {
             {/* 1) This wrapper just takes 100% of the circle. */}
             <div className="absolute inset-0 overflow-hidden">
               {/* 2) This inner div is what we actually zoom & shift */}
-              <div className="relative w-full h-full transform scale-[1.1] origin-top -translate-y-2">
+              <div className="relative w-full h-full transform scale-[1.1] origin-top">
                 <Image
                   src={`${basePath}/image_portfolio.jpeg`}
                   alt="Nithin Nair"
