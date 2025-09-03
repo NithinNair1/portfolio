@@ -15,8 +15,7 @@ export default function Projects() {
       title: "CampAssist Bot",
       description:
         "CampAssist Bot is a chatbot designed to guide freshers and guests through an imaginary college campus. It leverages Microsoft Azure's QnA Maker Service to create a knowledge base that answers campus-related questions and their possible permutations. The bot is integrated with Azure Web App Bot service and deployed via Azure Static Web Apps to provide an interactive campus introduction experience.",
-      image:
-        "https://i.ytimg.com/vi/Nfrc1VnQiiY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB-4EAtbSwtGlfjXNoz8Q7t7_IBZw?height=400&width=600",
+      image: "/campassist_icon.png?height=400&width=600",
       tags: [
         "Microsoft Azure",
         "QnA Maker",
