@@ -12,63 +12,20 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "CampAssist Bot",
       description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB"],
+        "CampAssist Bot is a chatbot designed to guide freshers and guests through an imaginary college campus. It leverages Microsoft Azure's QnA Maker Service to create a knowledge base that answers campus-related questions and their possible permutations. The bot is integrated with Azure Web App Bot service and deployed via Azure Static Web Apps to provide an interactive campus introduction experience.",
+      image:
+        "https://i.ytimg.com/vi/Nfrc1VnQiiY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB-4EAtbSwtGlfjXNoz8Q7t7_IBZw?height=400&width=600",
+      tags: [
+        "Microsoft Azure",
+        "QnA Maker",
+        "Web App Bot",
+        "Static Web Apps",
+        "Chatbot"
+      ],
       // github: "https://github.com",
-      demo: "https://demo.com"
-    },
-    {
-      id: 2,
-      title: "AI Content Generator",
-      description:
-        "An AI-powered application that generates content based on user prompts using OpenAI's GPT models.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Node.js", "OpenAI API", "Express", "PostgreSQL"],
-      // github: "https://github.com",
-      demo: "https://demo.com"
-    },
-    {
-      id: 3,
-      title: "Real-time Chat Application",
-      description:
-        "A real-time messaging platform with features like user authentication, message encryption, and file sharing.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Firebase", "WebSockets", "Tailwind CSS", "Redux"],
-      // github: "https://github.com",
-      demo: "https://demo.com"
-    },
-    {
-      id: 4,
-      title: "Task Management Dashboard",
-      description:
-        "A comprehensive task management system with Kanban boards, task assignments, and progress tracking.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Vue.js", "Express", "MongoDB", "Docker", "JWT"],
-      // github: "https://github.com",
-      demo: "https://demo.com"
-    },
-    {
-      id: 5,
-      title: "Fitness Tracking App",
-      description:
-        "A mobile application for tracking workouts, nutrition, and health metrics with data visualization.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React Native", "GraphQL", "Node.js", "MongoDB", "D3.js"],
-      // github: "https://github.com",
-      demo: "https://demo.com"
-    },
-    {
-      id: 6,
-      title: "Weather Forecast App",
-      description:
-        "A weather application that provides real-time forecasts, alerts, and historical weather data.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Redux", "Weather API", "Chart.js", "Geolocation"],
-      // github: "https://github.com",
-      demo: "https://demo.com"
+      demo: "https://www.youtube.com/watch?v=Nfrc1VnQiiY"
     }
   ];
 
