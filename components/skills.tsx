@@ -44,20 +44,14 @@ export default function Skills() {
         "FastAPI",
         "REST APIs",
         "RAG Pipelines",
-        "Vector Search (FAISS)"
+        "Vector Search (FAISS)",
+        "Guardrails"
       ]
     },
     {
       name: "Cloud & DevOps",
       icon: <Cloud className="h-6 w-6" />,
-      skills: [
-        "Azure OpenAI",
-        "AWS Bedrock",
-        "GCP Vertex AI",
-        "CI/CD (GitLab, Jenkins)",
-        "Kubernetes",
-        "Docker"
-      ]
+      skills: ["Azure OpenAI", "AWS Bedrock", "GCP Vertex AI", "Docker"]
     },
     {
       name: "Frontend",
@@ -73,7 +67,7 @@ export default function Skills() {
     {
       name: "Version Control",
       icon: <GitBranch className="h-6 w-6" />,
-      skills: ["Git", "GitHub", "GitLab", "Code Reviews"]
+      skills: ["Git", "GitHub", "GitLab"]
     },
     {
       name: "Programming Languages",
@@ -83,13 +77,7 @@ export default function Skills() {
     {
       name: "MLOps",
       icon: <Settings className="h-6 w-6" />,
-      skills: [
-        "MLflow",
-        "LLMOps",
-        "Monitoring Pipelines",
-        "Scalable Inference",
-        "Data Privacy Compliance"
-      ]
+      skills: ["MLflow", "LLMOps", "Monitoring Pipelines", "Arize Phoenix"]
     },
     {
       name: "Architecture",

@@ -32,16 +32,7 @@ export default function Projects() {
       description:
         "QueryFlow (NL → SQL) transforms natural-language questions into safe, read-only SQLite SELECT queries using Azure OpenAI. It guides the model with a detailed database schema, sanitizes generated SQL to ensure security, executes queries against a local SQLite database, and produces both markdown-formatted tables and natural-language summaries of results. The system integrates seamlessly with Azure’s Chat Completions API, emphasizing reliability, safety, and conversational insight from structured data.",
       image: "/queryflow_icon_thumb.png?height=400&width=600",
-      tags: [
-        "Python",
-        "Azure OpenAI",
-        "SQLite",
-        "httpx",
-        "pydantic",
-        "CORS",
-        "Dotenv",
-        "NL to SQL"
-      ],
+      tags: ["Python", "FastAPI", "Azure OpenAI", "SQLite", "Pydantic"],
       // github: "https://github.com/your-repo-here",
       demo: "https://youtu.be/UwA_q4nSz_c"
     }
