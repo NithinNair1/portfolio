@@ -35,6 +35,24 @@ export default function Projects() {
       tags: ["Python", "FastAPI", "Azure OpenAI", "SQLite", "Pydantic"],
       // github: "https://github.com/your-repo-here",
       demo: "https://youtu.be/UwA_q4nSz_c"
+    },
+    {
+      id: 2,
+      title: "Socratic Deep Research Tool",
+      description:
+        "This demo showcases a sophisticated AI-powered deep research workflow built around Socratic thinking logic for progressive, multi-level exploration of complex questions. It combines Perplexity Sonar Pro’s citation-rich AI answers with Azure OpenAI’s intelligent follow-up question generation and report synthesis. The system efficiently manages concurrency and background tasks to simulate a methodical, layered research process that reflects real-world critical thinking and knowledge discovery techniques, making it perfect for a portfolio emphasizing AI and cognitive workflow design",
+      image: "/socratic_deep_research.png?height=400&width=600",
+      tags: [
+        "Python",
+        "FastAPI",
+        "Azure OpenAI",
+        "Perplexity AI",
+        "AI Research Workflow",
+        "Job-ID Based Execution",
+        "Concurrency"
+      ],
+      // github: "https://github.com/your-repo-here",
+      demo: "https://youtu.be/lAs_wwst6To"
     }
   ];
 
